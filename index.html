@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Makes the site responsive on phones/tablets -->
+        <title>DylBDevvin Portfolio</title> <!-- Portfolio Name -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body> <!-- Visible info -->
+
+        
+        <header>
+            <h1>Dylan Granado</h1>
+            <p class = "subtitle">Game Developer · Web Developer · App Developer</p>
+            <nav>
+                <button class="tab-btn" data-target="game-dev">Game Dev</button>
+                <button class="tab-btn" data-target="web-dev">Web Dev</button>
+                <button class="tab-btn" data-target="app-dev">App Dev</button>
+            </nav>
+        </header>
+
+        <main>
+            <!-----------------------------------GAME DEV--------------------------------------->
+            <section id="game-dev" class="tab-content active">
+                <h2>Game Dev Projects</h2>
+
+                <a class="resume-btn" href="resumes/Dylan-Granado-Game-Dev-Resume.pdf" download>Download Game Dev Resume</a>
+
+                <!-- PROJECT CARD TEMPLATE-->
+                <article class="project-card">
+                    <h3>Koko's Kitchen: Unity</h3>
+                    <!-- PROJECT IMAGES -->
+                    <div class="project-images">
+                        <!-- Wrap each image in an anchor for the lightbox -->
+                        <a href="images/Kk1.png" class="lightbox-trigger">
+                          <img src="images/Kk1.png" alt="Image of Koko's Kitchen Overworld (City)">
+                        </a>
+                        <a href="images/Kk2.png" class="lightbox-trigger">
+                          <img src="images/Kk2.png" alt="Image of Koko's Kitchen Overworld (Autumn Forest)">
+                        </a>
+                        <a href="images/Kk3.png" class="lightbox-trigger">
+                          <img src="images/Kk3.png" alt="Image of Koko's Kitchen Overworld (Beach)">
+                        </a>
+                    </div>
+
+                    <!-- PROJECT DESCRIPTION -->
+                    <p>
+                        My first solo-developed game: a top-down adventure built in Unity featuring an explorable overworld, light combat, and puzzle elements. It was a personal experiment in learning the entire game development pipeline from the ground up — design, code, art, and more — and served as my entry point into Unity and C#.
+                        <br>
+                        <br>
+                        <strong>Learnings:</strong> Building a full game loop in Unity using C#, designing levels, puzzles, combat systems, optimization techniques, hands-on experience in solo game development from start to finish.
+                    </p>
+
+                    <a class="project-link" href="https://dylbdevvin.itch.io/kokos-kitchen" target="_blank">Play it on itch.io</a>
+                </article>
+
+                <!-- PROJECT CARD TEMPLATE -->
+                <article class="project-card">
+                    <h3>Really Frickin' Hard RPG: Unity</h3>
+                    <!-- PROJECT IMAGES -->
+                    <div class="project-images">
+                        <a href="images/RPGImage1.png" class="lightbox-trigger">
+                          <img src="images/RPGImage1.png" alt="Really Frickin' Hard RPG Title Screen">
+                        </a>
+                        <a href="images/RPGImage2.png" class="lightbox-trigger">
+                          <img src="images/RPGImage2.png" alt="RFH RPG Character Customization">
+                        </a>
+                        <a href="images/RPGImage3.png" class="lightbox-trigger">
+                          <img src="images/RPGImage3.png" alt="RFH RPG Combat">
+                        </a>
+                        <a href="images/RPGImage4.png" class="lightbox-trigger">
+                          <img src="images/RPGImage4.png" alt="RFH RPG Combat">
+                        </a>
+                    </div>
+
+                    <!-- PROJECT DESCRIPTION -->
+                    <p>
+                        A chaotic and brutally difficult boss battle inspired by classic turn-based JRPGs like Final Fantasy and Dragon Quest. You’ll customize a party of four — picking from unique classes and elements — and face off against an unreasonably powerful lightning-summoning chicken. Strategy, resource management, and build experimentation are key to surviving this standalone encounter. This project is a standalone challenge and a teaser of more intense RPGs to come.
+                        <br>
+                        <br>
+                        <strong>Learnings:</strong> Creating original game assets through pixel art, designing and balancing a complex turn-based combat system.
+                    </p>
+
+                    <a class="project-link" href="https://dylbdevvin.itch.io/really-frickin-hard-rpg" target="_blank">Play it on itch.io</a>
+                </article>
+
+                <!-- PROJECT CARD TEMPLATE -->
+                <article class="project-card">
+                    <h3>RPG Clicker: Godot (IN DEVELOPMENT)</h3>
+                    <!-- PROJECT IMAGES -->
+                    <div class="project-images">
+                        <a href="images/RPGClicker1.gif" class="lightbox-trigger">
+                          <img src="images/RPGClicker1.gif" alt="RPG Clicker Animation 1">
+                        </a>
+                        <a href="images/RPGClicker_2.gif" class="lightbox-trigger">
+                          <img src="images/RPGClicker_2.gif" alt="RPG Clicker Animation 2">
+                        </a>
+                    </div>
+
+                    <!-- PROJECT DESCRIPTION -->
+                    <p>
+                        A follow-up to my previous Unity game, Really Frickin Hard RPG, this game reimagines RPG mechanics in a cookie clicker-style idle game. Built using the Godot engine, it explores how classic RPG elements — like stats, leveling, passives, status effects, and party systems — can be layered onto a completely different genre. This project is part of an ongoing series where I experiment with integrating RPG systems into unexpected formats.
+                        <br>
+                        <br>
+                        <strong>Learnings:</strong> GDScript scripting, Godot Engine Basics, Progression System Design.
+                    </p>
+                </article>
+            </section>
+
+            <!-----------------------------------WEB DEV--------------------------------------->
+            <section id="web-dev" class="tab-content">
+                <h2>Web Dev Projects</h2>
+
+                <a class="resume-btn" href="resumes/Dylan-Granado-Web-Dev-Resume.pdf" download>Download Web Dev Resume</a>
+
+                 <!-- PROJECT CARD TEMPLATE -->
+                 <article class="project-card">
+                    <h3>Pixel Art Grass Generator</h3>
+                    <!-- PROJECT IMAGES -->
+                    <div class="project-images">
+                        <a href="images/GrassGenImage1.png" class="lightbox-trigger">
+                          <img src="images/GrassGenImage1.png" alt="Grass Generator UI">
+                        </a>
+                        <a href="images/GrassGenImage2.png" class="lightbox-trigger">
+                          <img src="images/GrassGenImage2.png" alt="Grass Generator sample of green grass and red flowers">
+                        </a>
+                        <a href="images/GrassGenImage3.png" class="lightbox-trigger">
+                          <img src="images/GrassGenImage3.png" alt="Grass Generator sample of snowy grass and purple flowers">
+                        </a>
+                    </div>
+
+                    <!-- PROJECT DESCRIPTION -->
+                    <p>
+                        Create Infinite Pixel Art Grass Tiles for Your Indie Game Overworlds! 
+                        <br>
+                        Creating game art can be one of the most time-consuming parts of game development, but with this tool, you'll NEVER have to draw pixel art grass AGAIN. This is a tool designed to help game developers, speeding up the tedious task of asset creation.
+                        <br>
+                        <br>
+                        <strong>Learnings:</strong> UI/UX Design, Responsive Web Design, Procedural Generation, HTML/JavaScript/CSS.
+                    </p>
+
+                    <a class="project-link" href="https://dylbdevvin.itch.io/pixel-art-grass-generator" target="_blank">Use it on itch.io</a>
+                </article>
+                <h4>This portfolio is also a Web Development project, crafted entirely with HTML, CSS, and JavaScript.</h4>
+            </section>
+
+            <!-----------------------------------APP DEV--------------------------------------->
+            <section id="app-dev" class="tab-content">
+                <h2>App Dev Projects</h2>
+
+                <a class="resume-btn" href="resumes/Dylan-Granado-App-Dev-Resume.pdf" download>Download App Dev Resume</a>
+
+                <p>App development projects coming soon!</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>Contact me at: granadod1738@gmail.com</p>
+        </footer>
+
+        <!-- Lightbox Overlay -->
+        <div id="lightbox-overlay" class="lightbox-overlay">
+            <img id="lightbox-image" src="" alt="Full size view">
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
