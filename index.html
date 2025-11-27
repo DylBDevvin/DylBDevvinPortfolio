@@ -18,15 +18,43 @@
                 <button class="tab-btn" data-target="game-dev">Game Dev</button>
                 <button class="tab-btn" data-target="web-dev">Web Dev</button>
                 <button class="tab-btn" data-target="app-dev">App Dev</button>
+                <button class="tab-btn" id="extra-btn" data-target="about-me">About Me</button>
             </nav>
         </header>
 
         <main>
+          <!-----------------------------------ABOUT ME--------------------------------------->
+          <section id="about-me" class="tab-content">
+            <h2>About Me</h2>
+            <article class="project-card">
+              <h3>Hi!!!</h3>
+              <p>I’m a developer of entirely too many things—websites, games, apps—and a designer of UI, characters, music, and whatever else my brain decides to obsess over that week. I blame video games for all of it. Growing up, I played way too many, and the joy they gave me made me want to create that same feeling for others. That curiosity pushed me into coding. Starting with small websites and simple games, I eventually took that passion to Rutgers to study computer science… where I quickly realized how much I didn’t know. But instead of backing down, I just kept creating. More games, more apps, more websites, more designs, more music...anything that let me build worlds and experiences. Now I’m here: still creating, still learning, still chasing that spark that made me pursue creation for the first time. 
+                <br><br>And if you’re an employer reading this… feel free to rescue me from my ever-growing pile of personal projects. I’d love to put this energy toward building something for you.</p>
+                <div id="gameContainer">
+                  <h2>Now Play Tic Tac Toe With Me.</h2>
+                  <h3>If I win, you have to at least schedule an interview.</h3>
+                  <div id ="cellContainer">
+                    <div cellIndex="0" class="cell"></div>
+                    <div cellIndex="1" class="cell"></div>
+                    <div cellIndex="2" class="cell"></div>
+                    <div cellIndex="3" class="cell"></div>
+                    <div cellIndex="4" class="cell"></div>
+                    <div cellIndex="5" class="cell"></div>
+                    <div cellIndex="6" class="cell"></div>
+                    <div cellIndex="7" class="cell"></div>
+                    <div cellIndex="8" class="cell"></div>
+                  </div>
+                  <h2 id="statusText"></h2>
+                  <button class="reset-button" id="restartBtn">Restart</button>
+
+                </div>
+            </article>
+          </section>
             <!-----------------------------------GAME DEV--------------------------------------->
             <section id="game-dev" class="tab-content active">
                 <h2>Game Dev Projects</h2>
 
-                <a class="resume-btn" href="resumes/Dylan-Granado-Game-Dev-Resume.pdf" download>Download Game Dev Resume</a>
+                <a class="resume-btn" href="resumes/Dylan Granado Game Developer Resume.pdf" download>Download Game Dev Resume</a>
 
                 <!-- PROJECT CARD TEMPLATE-->
                 <article class="project-card">
@@ -111,7 +139,7 @@
             <section id="web-dev" class="tab-content">
                 <h2>Web Dev Projects</h2>
 
-                <a class="resume-btn" href="resumes/Dylan-Granado-Web-Development-Resume.pdf" download>Download Web Dev Resume</a>
+                <a class="resume-btn" href="resumes/Dylan Granado Web Developer Resume.pdf" download>Download Web Dev Resume</a>
 
                 <!-- PROJECT CARD TEMPLATE -->
                  <article class="project-card">
@@ -183,7 +211,7 @@
 
                     <!-- PROJECT DESCRIPTION -->
                     <p>
-                        A simple web tool for editing .srt subtitle files
+                        A simple web tool for editing .srt subtitle files.
                         A web-based subtitle editor that connects to the Deepgram API for automatic transcription and easy subtitle management.<br><br>
   This tool lets users upload audio, receive accurate transcriptions via the API, edit the subtitle text inline, and export finished subtitles in the popular .srt format.<br><br>
                         <strong>Learnings:</strong> Working with external APIs, asynchronous JavaScript (fetch and promises), handling file uploads/downloads, and integrating backend services with frontend interfaces.

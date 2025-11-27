@@ -71,6 +71,12 @@ nav {
     margin-top: 1rem;
 }
 
+#extra-btn {
+  position:absolute;
+  top:20px;
+  right:20px;
+}
+
 .tab-btn {
     background-color: #1a1a1a;
     color: #fff;
@@ -177,6 +183,24 @@ footer {
 
   }
 
+  .reset-button{
+    display: inline-block;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: #1a1a1a;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    
+  }
+
+  .reset-button:hover {
+    background-color: #440000;
+  }
+
   /* Lightbox overlay styling */
 .lightbox-overlay {
     position: fixed;               /* Position it over the entire viewport */
@@ -218,6 +242,30 @@ footer {
   /* Animation trigger for project cards */
   .animate-in {
     animation: slideInFade 0.5s ease forwards;
+  }
+
+  .cell{
+    width: 75px;
+    height: 75px;
+    border: 2px solid;
+    box-shadow: 0 0 0 2px;
+    line-height: 75px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    cursor: pointer;
+
+  }
+
+  #gameContainer{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+  }
+
+  #cellContainer{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 225px;
+    margin: auto;
   }
   
   /* Stagger */
